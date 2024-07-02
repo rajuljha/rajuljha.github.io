@@ -22,6 +22,15 @@ ignoreErrors = ["error-remote-getjson"]
     bio = 'Software Developer'
     favicon = "favicon/2.png"
 
+[params.giscus]
+    repo = 'rajuljha/rajuljha.github.io'                 # see https://giscus.app for more details
+    repoId = 'MDEwOlJlcG9zaXRvcnkyMzUxNTE0MDU='
+    category = 'Announcements'
+    categoryId = 'DIC_kwDODgQgLc4Cghn3'
+    mapping = 'pathname'
+    theme = 'light'
+    lang = 'en'
+
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
