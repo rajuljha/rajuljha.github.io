@@ -2,6 +2,7 @@
 title = 'About Me'
 date = 2024-07-01T23:34:16+05:30
 draft = false
+comments = false
 +++
 
 ## Hi👋 I am Rajul

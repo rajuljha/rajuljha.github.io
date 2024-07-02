@@ -21,6 +21,7 @@ ignoreErrors = ["error-remote-getjson"]
     name = 'Rajul Jha'
     bio = 'Software Developer'
     favicon = "favicon/2.png"
+    # monoDarkIcon = true
 
 [params.giscus]
     repo = 'rajuljha/rajuljha.github.io'                 # see https://giscus.app for more details
