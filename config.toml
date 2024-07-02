@@ -1,0 +1,76 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'The Knight Blog'
+theme = "paper"
+author = 'Rajul Jha'
+paginate = 3
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+
+
+[params]
+    color = 'linen'
+
+    twitter = 'rajul_jha'
+    github = 'rajuljha'
+    linkedin = 'rajuljha'  
+    instagram = 'rjknightmare'
+
+    avatar = 'rajuljha49@gmail.com'
+    name = 'Rajul Jha'
+    bio = 'Software Developer'
+    favicon = "favicon/2.png"
+
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe = true
+
+
+[menu]
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 10
+    [[menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/contact/"
+        weight = 10
+
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+    series = "series"
+
+
+[privacy]
+    [privacy.vimeo]
+        disabled = false
+        simple = true
+
+    [privacy.twitter]
+        disabled = false
+        enableDNT = true
+        simple = true
+
+    [privacy.instagram]
+        disabled = false
+        simple = true
+
+    [privacy.youtube]
+        disabled = false
+        privacyEnhanced = true
+
+
+[services]
+    [services.instagram]
+        disableInlineCSS = true
+
+    [services.twitter]
+        disableInlineCSS = true
