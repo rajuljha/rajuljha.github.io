@@ -10,77 +10,77 @@ ignoreErrors = ["error-remote-getjson"]
 
 
 [params]
-    color = 'linen'
+color = 'linen'
 
-    twitter = 'rajul_jha'
-    github = 'rajuljha'
-    linkedin = 'rajuljha'  
-    instagram = 'rjknightmare'
+twitter = 'rajul_jha'
+github = 'rajuljha'
+linkedin = 'rajuljha'
+instagram = 'rjknightmare'
 
-    avatar = 'rajuljha49@gmail.com'
-    name = 'Rajul Jha'
-    bio = 'Software Developer'
-    favicon = "favicon/2.png"
-    # monoDarkIcon = true
+avatar = 'rajuljha49@gmail.com'
+name = 'Rajul Jha'
+bio = 'Software Developer'
+favicon = "favicon/2.png"
+# monoDarkIcon = true
 
 [params.giscus]
-    repo = 'rajuljha/rajuljha.github.io'                 # see https://giscus.app for more details
-    repoId = 'MDEwOlJlcG9zaXRvcnkyMzUxNTE0MDU='
-    category = 'Announcements'
-    categoryId = 'DIC_kwDODgQgLc4Cghn3'
-    mapping = 'pathname'
-    theme = 'light'
-    lang = 'en'
+repo = 'rajuljha/rajuljha.github.io'        # see https://giscus.app for more details
+repoId = 'MDEwOlJlcG9zaXRvcnkyMzUxNTE0MDU='
+category = 'Announcements'
+categoryId = 'DIC_kwDODgQgLc4Cghn3'
+mapping = 'pathname'
+theme = 'light'
+lang = 'en'
 
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-        unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 
 [menu]
-    [[menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about/"
-        weight = 10
-    [[menu.main]]
-        identifier = "contact"
-        name = "Contact"
-        url = "/contact/"
-        weight = 10
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 10
 
 
 [taxonomies]
-    category = "categories"
-    tag = "tags"
-    series = "series"
+category = "categories"
+tag = "tags"
+series = "series"
 
 
 [privacy]
-    [privacy.vimeo]
-        disabled = false
-        simple = true
+[privacy.vimeo]
+disabled = false
+simple = true
 
-    [privacy.twitter]
-        disabled = false
-        enableDNT = true
-        simple = true
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
 
-    [privacy.instagram]
-        disabled = false
-        simple = true
+[privacy.instagram]
+disabled = false
+simple = true
 
-    [privacy.youtube]
-        disabled = false
-        privacyEnhanced = true
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
 
 
 [services]
-    [services.instagram]
-        disableInlineCSS = true
+[services.instagram]
+disableInlineCSS = true
 
-    [services.twitter]
-        disableInlineCSS = true
+[services.twitter]
+disableInlineCSS = true
