@@ -19,7 +19,7 @@ instagram = 'rjknightmare'
 
 avatar = 'rajuljha49@gmail.com'
 name = 'Rajul Jha'
-bio = 'Software Developer'
+bio = """Software Engineer, GSoC '24 and '25 @FOSSology"""
 favicon = "favicon/2.png"
 # monoDarkIcon = true
 
@@ -46,11 +46,18 @@ identifier = "about"
 name = "About"
 url = "/about/"
 weight = 10
+
 [[menu.main]]
 identifier = "contact"
-name = "Contact"
-url = "/contact/"
-weight = 10
+name = "Posts"
+url = "/posts/"
+weight = 20
+
+[[menu.main]]
+identifier = "Project"
+name = "Projects"
+url = "/projects/"
+weight = 30
 
 
 [taxonomies]
