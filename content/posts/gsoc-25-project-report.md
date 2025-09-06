@@ -21,6 +21,8 @@ tags = [
   - [The Atarashi Classifier](#the-atarashi-classifier)
   - [Integrating Atarashi with FOSSology](#integrating-atarashi-with-fossology)
     - [Improve scanning speed using Query Aggregation](#improve-scanning-speed-using-query-aggregation)
+  - [Relevant PR's](#relevant-prs)
+  - [Deliverables](#deliverables)
   - [Known drawbacks](#known-drawbacks)
   - [My learnings](#my-learnings)
   - [Acknowledgements](#acknowledgements)
@@ -308,6 +310,7 @@ Output:
 
 
 ### Improve scanning speed using Query Aggregation
+
 One of the most significant challenges in integrating Atarashi into FOSSology was the high overhead of 
 database transactions. By default, every license detection result from Atarashi was being inserted row by row 
 into the database, which caused:
@@ -322,7 +325,28 @@ To address this, I introduced query aggregation:
 
 This change reduced DB query load by **~70%**, cut down scan runtimes significantly, and made the integration scalable for larger datasets.
 
+The whole user flow can be described using this diagram:
+
 ![Screenshot](/gsoc-25-project-report/user-flow.png)
+
+## Relevant PR's
+
+* [feat(newagent): Add a new Keyword Agent for pre-checking](https://github.com/fossology/atarashi/pull/109)
+* [Add atarashi into FOSSology](https://github.com/fossology/fossology/pull/3113)
+* [fix(binder): Use minimum of startLine and endLine #63 ](https://github.com/fossology/Nirjas/pull/63)
+* [Atarashi Classifier](https://github.com/rajuljha/atarashi-classifer)
+
+Throughout GSoC, I have maintained a work log in the form of weekly progress report that is available
+at the [Fossology GSoC Page](https://fossology.github.io/gsoc/docs/2025/atarashi-enhancement)
+
+## Deliverables
+
+|                      Tasks                    |       Planned     |            Completed          |
+| :--------------------------------------------:|       :-----:     |           :----------:        |
+| Add Keyword Based Agent to Atarashi           |         Yes       |                ✅             |
+| Fix Nirjas and it's bugs                      |         Yes       |                ✅             |
+| Analyze Minerva Dataset                       |         Yes       |                ✅             |
+| Work on Atarashi Classifier Model             |         Yes       |                ✅ (partially)            |
 
 ## Known drawbacks
 
