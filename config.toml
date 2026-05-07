@@ -1,12 +1,14 @@
 baseURL = 'https://rajuljha.github.io'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'The Knight Blog'
 theme = "paper"
-author = 'Rajul Jha'
 paginate = 3
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
+
+[author]
+name = 'Rajul Jha'
 
 
 [params]
@@ -71,7 +73,7 @@ series = "series"
 disabled = false
 simple = true
 
-[privacy.twitter]
+[privacy.x]
 disabled = false
 enableDNT = true
 simple = true
@@ -89,5 +91,5 @@ privacyEnhanced = true
 [services.instagram]
 disableInlineCSS = true
 
-[services.twitter]
+[services.x]
 disableInlineCSS = true
